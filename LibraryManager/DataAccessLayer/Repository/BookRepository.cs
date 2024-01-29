@@ -1,17 +1,20 @@
 using BusinessObjects.Entity;
-
+using System.Collections.Generic;
 namespace DataAccessLayer.Repository;
 
 public class BookRepository
 {
-
-    public static IEnumerable<Book> GetAll()
+    private List<Book> books;
+    public  IEnumerable<Book> GetAll()
     {
-        return new Book[10];
+        return books;
     }
 
-    public static Book Get(int id)
+    public Book Get(int id)
     {
-        return new Book();
+        return books.FirstOrDefault(book => book.id == id);    }
+
+    public IEnumerable<Book> ShowCat(Book.BookType category)    {
+        return books.Where(book => book.Type == category);
     }
 }

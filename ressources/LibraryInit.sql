@@ -49,3 +49,5 @@ INSERT INTO book VALUES (1, "Le conte de Monte Cristo", 900, "Aventure", 10, 1),
 	(3, "Apprendre le Java mais pas sur l'île de Java", 900, "Enseignement", 10, 2),
 	(4, "Le RC Lense, un club pas comme les autres", 900, "Histoire", 10, 4),
 	(5, "La RGPD, une protection contre l 'injustice", 900, "Juridique", 10, 1);
+
+	
