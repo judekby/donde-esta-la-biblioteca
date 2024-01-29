@@ -10,4 +10,10 @@
       <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj" />
+      <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+      <ProjectReference Include="..\LibraryManager\LibraryManager.csproj" />
+    </ItemGroup>
+
 </Project>
