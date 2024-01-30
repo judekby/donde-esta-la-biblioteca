@@ -9,9 +9,6 @@ public interface ICatalogManager
     public Book Find(int id);
     public IEnumerable<Book> GetFantasyBooks();
     public Book GetBestGradeBook();
-
-
-
-
+    
 
 }

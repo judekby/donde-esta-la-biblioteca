@@ -11,11 +11,10 @@ public class Program
     private static void Main(string[] args)
     {
         var host = CreateHostBuilder(new ConfigurationBuilder());
+        
         var catalogService = host.Services.GetRequiredService<ICatalogService>();
         var managerService = host.Services.GetRequiredService<ICatalogManager>();
-        //var TypeService = h ost.Services.GetRequiredService<IGenericRepository>();
-
-
+        
         catalogService.ShowCatalog();
         
     }
